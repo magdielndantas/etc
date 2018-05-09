@@ -1,12 +1,12 @@
 #!/bin/sh
-
-dirArquivo = "/home/magdiel"
+# @magdielndantas
+dirArchive = "/home/magdiel"
 dirBackup = "/home/magdiel"
-backupNome = "backup.tgz"
-
-tar -czpf ${dirArquivo}${backupNome}${dirBackup}
-
+nameBackup = "backup.tgz"
+day = $(date -d)
+hour =
+tar -czpf ${dirArchive} ${nameBackup} ${dirBackup} 
 echo "Backup realizado"
-echo "de ${dirArquivo}"
+echo "de ${dirArquive}"
 echo "para ${dirBackup}"
 exit()
